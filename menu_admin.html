@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouvidoria do Condomínio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .options {
+            margin-top: 20px;
+        }
+
+        .options form {
+            margin: 10px 0;
+        }
+
+        .options button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .options button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo Administrador</h1>
+        <div class="options">
+            <form action="/sugestoes" style="display: inline;">
+                <button type="submit">Lista de Sugestões</button>
+            </form>
+            <form action="/reclamacoes" style="display: inline;">
+                <button type="submit">Lista de Reclamações</button>
+            </form>
+            <form action="/denuncias" style="display: inline;">
+                <button type="submit">Lista de Denuncias</button>
+            </form>
+            <form action="/add_inadimplentes" style="display: inline;">
+                <button type="submit">Adicionar Inadimplente</button>
+            </form>
+             <form action="/inadimplentes" style="display: inline;">
+                <button type="submit">Lista de Inadimplentes</button>
+            </form>
+            <form action="/menu">
+            <button type="submit">Voltar para a Página Inicial</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
